@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.load-box{
+	width: 400px;
+	visibility: hidden;
+}
+.select-box{
+	width: 550px;
+}
+.image-box{
+	width: 700px;
+	visibility: hidden;
+}
+.load-box,.select-box,.image-box{
+	margin: 20px auto;
+	text-align: center;
+}
+.car-type,.wheel-type,.select-box img{
+	display: none;
+}

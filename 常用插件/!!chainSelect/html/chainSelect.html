@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>chainSelect</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/chainSelect.css" rel="stylesheet">
+</head>
+<body>
+    <div class="load-box">
+    	<img src="../images/data-loading.gif" alt="数据装载中......" />
+    	<br />
+    	数据装载中......
+    </div>
+    <div class="select-box">
+    	<span class="car-name">
+	    	汽车产商：
+	    	<select name="carSelect" id="car-producor">
+	    		<option value="" selected="selected">请选择汽车产商</option>
+	    		<option value="BWM">宝马</option>
+	    		<option value="Audi">奥迪</option>
+	    		<option value="VW">大众</option>
+	    	</select>
+	    	<img src="../images/pfeil.gif" alt="有数据" />
+    	</span>
+    	<span class="car-type">
+	    	汽车类型：
+	    	<select name="carSelect" id="car-choice"></select>
+	    	<img src="../images/pfeil.gif" alt="有数据" />
+    	</span>
+    	<span class="wheel-type">
+	    	车轮类型：
+	    	<select name="carSelect" id="wheel-choice"></select>
+    	</span>
+    </div>
+	<div class="image-box">
+		<img src="../images/img-loading.gif" alt="图片加载中" class="img-loading" />
+		<img src="" alt="图片" class="img-content" />
+	</div>
+
+<script type="text/javascript" src="../js/jquery-3.0.0.js"></script>
+<script type="text/javascript" src="../js/chainSelect.js"></script>
+</body>
+</html>

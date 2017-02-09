@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="oP">This is a loaded page.</p>
+	<input type="text" id="text" />
+	<button id="btn">test</button>
+
+	<script>
+		window.onload = function() {
+			var oBtn = document.getElementById("btn"),
+				oP = document.getElementById("oP"),
+				oText = document.getElementById("text");
+			oBtn.onclick = function() {
+				if(oText.value !== "") {
+					oP.innerHTML = oText;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

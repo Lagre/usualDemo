@@ -1,0 +1,65 @@
+/* 最好引入normalize.css来重置样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+/* 重复使用的数值，如颜色等，可以单独设置变量，此处因样式较少所以直接填入，不引入Sass了 */
+.m-wrap{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+.m-wrap .tab-box li{
+	float: left;	
+	width: 70px;
+	height: 25px;
+	border: 1px solid #ccc;
+	border-top: 3px solid red;
+	background-color: #ccc;
+	padding: 2px;
+	margin-right: 4px;
+}
+.m-wrap .tab-box .tab-active{
+	background-color: #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.m-wrap .content-box div{
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	background-color: #aaa;
+	display: none;
+}
+.m-wrap .content-box .content-active{
+	/* 清除浮动 */
+	clear: both;
+	display: block;
+}
+.m-wrap .tab-second-box li{
+	float: left;
+	width: 70px;
+	height: 25px;
+	color: blue;
+	padding: 10px;
+}
+.m-wrap .tab-second-box .tab-active{
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background-color: yellow;
+	position: relative;
+	z-index: 100;
+}
+.m-wrap #ajax-content{
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	background-color: yellow;
+	border: 1px solid #aaa;
+	clear: both;
+	position: relative;
+	top: -1px;
+}

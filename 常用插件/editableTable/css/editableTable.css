@@ -1,0 +1,14 @@
+.m-table,.m-table th,.m-table td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.m-table th{
+    width: 100px;
+    background-color: aqua;
+}
+.m-table td{
+    text-align: center;
+}
+.m-table tr:nth-child(even){
+    background-color: #ddd;
+}

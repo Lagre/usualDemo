@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 1000px;
+}
+
+button{
+	padding: 5px;
+	background: linear-gradient(to bottom, aqua 0%, white 100%);
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ccc;
+}
+.left-window, .center-window, .right-window{
+	width: 300px;
+	height: 300px;
+	position: fixed;
+	background: linear-gradient(to bottom, aqua 0%, purple 100%);
+	padding: 2px;
+	display: none;
+}
+.left-window-title, .center-window-title, .right-window-title{
+	padding: 2px;
+}
+.left-window-title span, .center-window-title span, .right-window-title span{
+	color: #aaa;
+	float: right;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.left-window-content, .center-window-content, .right-window-content{
+	width: 290px;
+	height: 265px;
+	margin: 0 auto;
+	overflow: auto;
+	background-color: white;
+}
+.left-window{
+	left: 0;
+	bottom: 0;
+}
+.right-window{
+	right: 0;
+	bottom: 0;
+	display: block;
+	animation: floatUp 1s linear forwards,2s fadeOut 5s linear forwards;
+}
+.center-window{
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+}
+@keyframes floatUp{
+	from {
+		bottom: -300px;
+	}
+	to{
+		bottom: 0;
+	}
+}
+@keyframes fadeOut{
+	from {
+		opacity: 1;
+		filter: alpha(opacity = 100);
+	}
+	to {
+		opacity: 0;
+		filter: alpha(opacity = 0);
+	}
+}
